@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+
+// This class manages the timer only which will be called on another script for a win/lose condition 
 public class Timer : MonoBehaviour
 {
     public float time = 300f; // 5 minutes in seconds
