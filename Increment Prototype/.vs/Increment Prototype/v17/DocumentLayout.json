@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Increment-Prototype-Game\\Increment Prototype\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|C:\\Increment-Prototype-Game\\Increment Prototype\\assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|c:\\increment-prototype-game\\increment prototype\\assets\\scripts\\coindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|c:\\increment-prototype-game\\increment prototype\\assets\\scripts\\buttonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|C:\\Increment-Prototype-Game\\Increment Prototype\\assets\\scripts\\buttonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|C:\\Increment-Prototype-Game\\Increment Prototype\\assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|C:\\Increment-Prototype-Game\\Increment Prototype\\assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F350E6B-E088-423F-58B1-866B098A94A7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Timer.cs",
               "DocumentMoniker": "C:\\Increment-Prototype-Game\\Increment Prototype\\Assets\\Scripts\\Timer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timer.cs",
@@ -47,33 +47,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CoinData.cs",
               "DocumentMoniker": "C:\\Increment-Prototype-Game\\Increment Prototype\\Assets\\Scripts\\CoinData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CoinData.cs",
               "ToolTip": "C:\\Increment-Prototype-Game\\Increment Prototype\\Assets\\Scripts\\CoinData.cs",
               "RelativeToolTip": "Assets\\Scripts\\CoinData.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T07:07:17.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ButtonManager.cs",
               "DocumentMoniker": "C:\\Increment-Prototype-Game\\Increment Prototype\\Assets\\Scripts\\ButtonManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonManager.cs",
               "ToolTip": "C:\\Increment-Prototype-Game\\Increment Prototype\\Assets\\Scripts\\ButtonManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ButtonManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T08:13:17.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SceneController.cs",
               "DocumentMoniker": "C:\\Increment-Prototype-Game\\Increment Prototype\\Assets\\Scripts\\SceneController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneController.cs",
