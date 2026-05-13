@@ -2,7 +2,7 @@
 - Project name: Increment Prototype
 - Unity version: Unity 6000.2.9f1
 - Active game object:
-  - Name: Timer
+  - Name: CoinDataManager
   - Tag: Untagged
-  - Layer: UI
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

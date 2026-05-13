@@ -16,12 +16,12 @@ public class CoinData : MonoBehaviour
 
     [Header("Values")]
     public float coinValue;
-    public float coinPerSecond = 1f;
-    public float upgradeCost = 25f;
-    public float upgradeCostBase = 25f;
-    public float upgradeCostMultiplier = 1.5f;
-    public float upgradeBonusMultiplier = 0.8f;
-    public int   upgradeLevel = 0;
+    public float coinPerSecond;
+    public float upgradeCost;
+    public float upgradeCostBase;
+    public float upgradeCostMultiplier;
+    public float upgradeBonusMultiplier;
+    public int   upgradeLevel;
     public int   maxUpgradeLevel = 5;
 
     private void Update()
@@ -29,15 +29,18 @@ public class CoinData : MonoBehaviour
         // Linear Coin Gain from time
         coinValue += coinPerSecond * Time.deltaTime;
 
+
         //UI Update
         coinTracker.text = "Coins: " + Mathf.FloorToInt(coinValue).ToString();  
         coinGenerationTracker.text = "Coins Per second: " + coinPerSecond.ToString("F1");
     }
 
+
     private void Start()
     {
-        coinPerSecond = 1f;
+        upgradeLevel = 1;
     }
+
 
     // Handles the Formulation testing logic for linear, exponential, and multiplicative coin gain and upgrade cost increase
     public void Upgrade() 
@@ -52,27 +55,20 @@ public class CoinData : MonoBehaviour
         }
 
         // Apply the upggrade effect and cost increase only if the player has enough coins to purchase the upgrade. If the player does not have enough coins, display a message indicating that they cannot afford the upgrade.
-        if (coinValue >= upgradeCost)
+        if (coinValue >= upgradeCost && upgradeLevel < maxUpgradeLevel)
         {
             coinValue -= upgradeCost;
+
             upgradeLevel++;
+
             upgradeLevelTracker.text = "Coin Generator+ Level: " + upgradeLevel.ToString();
+
+
+            upgradeCost = upgradeCostBase * Mathf.Pow(upgradeCostMultiplier, upgradeLevel);// Exponential cost increase
+
+            upgradeCostTracker.text = Mathf.FloorToInt(upgradeCost).ToString();
+
             CoinGenerator(); // Apply the coin generation increase from the upgrade
-
-            // Apply upgrade cost increase for the next level, but only if the current upgrade level is below the maximum. If the max level is reached, keep the cost the same and display a message.
-            if (upgradeLevel < maxUpgradeLevel)
-            {
-                upgradeCost = upgradeCostBase * Mathf.Pow(upgradeCostMultiplier, upgradeLevel); // Exponential cost increase
-            }
-
-            else 
-            {
-                upgradeCost = upgradeCost; // Keep the cost the same at max level
-                statusTracker.text = "Maximum upgrade level reached!";
-            }
-
-            upgradeCostTracker.text = "Coin Generator+: " + Mathf.FloorToInt(upgradeCost).ToString();
-            upgradeLevelTracker.text = "Coin Generator+Level: " + upgradeLevel.ToString();
         }
 
         else
@@ -80,13 +76,17 @@ public class CoinData : MonoBehaviour
             statusTracker.gameObject.SetActive(true);
             statusTracker.text = "Not enough coins to upgrade!";
             StartCoroutine(HideStatusMessage(0.5f));
+
+            upgradeCost = upgradeCost; // Keep the cost the same at max level
+            statusTracker.text = "Maximum upgrade level reached!";
         }
     }
 
 
     public void CoinGenerator() 
     {
-        if (upgradeLevel <= maxUpgradeLevel)
+        if (upgradeLevel < maxUpgradeLevel)
+
             coinPerSecond *= (1 + upgradeBonusMultiplier); // Multiplicative coin gain increase
     }
 
